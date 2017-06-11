@@ -91,6 +91,16 @@ public interface CookingListener extends ParseTreeListener {
 	 */
 	void exitFd_food(@NotNull CookingParser.Fd_foodContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link CookingParser#fishermans_dock}.
+	 * @param ctx the parse tree
+	 */
+	void enterFishermans_dock(@NotNull CookingParser.Fishermans_dockContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CookingParser#fishermans_dock}.
+	 * @param ctx the parse tree
+	 */
+	void exitFishermans_dock(@NotNull CookingParser.Fishermans_dockContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link CookingParser#costco}.
 	 * @param ctx the parse tree
 	 */
@@ -120,16 +130,6 @@ public interface CookingListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitStep(@NotNull CookingParser.StepContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link CookingParser#fisherman_dock}.
-	 * @param ctx the parse tree
-	 */
-	void enterFisherman_dock(@NotNull CookingParser.Fisherman_dockContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link CookingParser#fisherman_dock}.
-	 * @param ctx the parse tree
-	 */
-	void exitFisherman_dock(@NotNull CookingParser.Fisherman_dockContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CookingParser#grill}.
 	 * @param ctx the parse tree

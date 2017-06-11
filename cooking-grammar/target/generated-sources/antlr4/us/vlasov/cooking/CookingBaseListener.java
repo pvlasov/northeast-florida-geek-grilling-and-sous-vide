@@ -115,6 +115,18 @@ public class CookingBaseListener implements CookingListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterFishermans_dock(@NotNull CookingParser.Fishermans_dockContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFishermans_dock(@NotNull CookingParser.Fishermans_dockContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterCostco(@NotNull CookingParser.CostcoContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -146,18 +158,6 @@ public class CookingBaseListener implements CookingListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitStep(@NotNull CookingParser.StepContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterFisherman_dock(@NotNull CookingParser.Fisherman_dockContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitFisherman_dock(@NotNull CookingParser.Fisherman_dockContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

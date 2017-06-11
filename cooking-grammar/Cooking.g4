@@ -15,7 +15,7 @@ nutrition: shop prepare 'consume';
 /**
  * This grammar covers shopping at Costco and Fisherman Dock. 
  */
-shop: costco | fisherman_dock;
+shop: costco | fishermans_dock;
 
 costco: 'Costco' costco_food;
 
@@ -27,7 +27,7 @@ lamb: 'lamb' ('rack' | 'chops' | 'leg');
 
 pork: 'pork' 'ribs';
 
-fisherman_dock: 'Fisherman Dock' fd_food;
+fishermans_dock: 'Fisherman\'s Dock' fd_food;
 
 fd_food: 'salmon' | 'shrimp';
 

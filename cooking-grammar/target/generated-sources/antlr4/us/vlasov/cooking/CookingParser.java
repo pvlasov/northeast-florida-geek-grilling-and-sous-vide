@@ -25,18 +25,18 @@ public class CookingParser extends Parser {
 		T__0=25;
 	public static final String[] tokenNames = {
 		"<INVALID>", "'grill'", "'season'", "'shrimp'", "'lamb'", "'freeze'", 
-		"'Fisherman Dock'", "'sous_vide'", "'chops'", "'electric'", "'tenderloin'", 
-		"'corvina'", "'rack'", "'toaster oven'", "'Costco'", "'steak'", "'chicken'", 
-		"'charcoal'", "'strip'", "'ribs'", "'leg'", "'salmon'", "'bag'", "'pan'", 
+		"'sous_vide'", "'chops'", "'electric'", "'tenderloin'", "'corvina'", "'rack'", 
+		"'toaster oven'", "'Costco'", "'steak'", "'chicken'", "'charcoal'", "'strip'", 
+		"'ribs'", "'leg'", "'salmon'", "'bag'", "'Fisherman's Dock'", "'pan'", 
 		"'consume'", "'pork'"
 	};
 	public static final int
 		RULE_nutrition = 0, RULE_shop = 1, RULE_costco = 2, RULE_costco_food = 3, 
-		RULE_steak = 4, RULE_lamb = 5, RULE_pork = 6, RULE_fisherman_dock = 7, 
+		RULE_steak = 4, RULE_lamb = 5, RULE_pork = 6, RULE_fishermans_dock = 7, 
 		RULE_fd_food = 8, RULE_prepare = 9, RULE_step = 10, RULE_grill = 11, RULE_sous_vide = 12;
 	public static final String[] ruleNames = {
 		"nutrition", "shop", "costco", "costco_food", "steak", "lamb", "pork", 
-		"fisherman_dock", "fd_food", "prepare", "step", "grill", "sous_vide"
+		"fishermans_dock", "fd_food", "prepare", "step", "grill", "sous_vide"
 	};
 
 	@Override
@@ -105,8 +105,8 @@ public class CookingParser extends Parser {
 		public CostcoContext costco() {
 			return getRuleContext(CostcoContext.class,0);
 		}
-		public Fisherman_dockContext fisherman_dock() {
-			return getRuleContext(Fisherman_dockContext.class,0);
+		public Fishermans_dockContext fishermans_dock() {
+			return getRuleContext(Fishermans_dockContext.class,0);
 		}
 		public ShopContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -128,16 +128,16 @@ public class CookingParser extends Parser {
 		try {
 			setState(32);
 			switch (_input.LA(1)) {
-			case T__11:
+			case T__12:
 				enterOuterAlt(_localctx, 1);
 				{
 				setState(30); costco();
 				}
 				break;
-			case T__19:
+			case T__3:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(31); fisherman_dock();
+				setState(31); fishermans_dock();
 				}
 				break;
 			default:
@@ -179,7 +179,7 @@ public class CookingParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(34); match(T__11);
+			setState(34); match(T__12);
 			setState(35); costco_food();
 			}
 		}
@@ -224,17 +224,17 @@ public class CookingParser extends Parser {
 		try {
 			setState(42);
 			switch (_input.LA(1)) {
-			case T__15:
-			case T__7:
+			case T__16:
+			case T__8:
 				enterOuterAlt(_localctx, 1);
 				{
 				setState(37); steak();
 				}
 				break;
-			case T__9:
+			case T__10:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(38); match(T__9);
+				setState(38); match(T__10);
 				}
 				break;
 			case T__21:
@@ -243,10 +243,10 @@ public class CookingParser extends Parser {
 				setState(39); lamb();
 				}
 				break;
-			case T__14:
+			case T__15:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(40); match(T__14);
+				setState(40); match(T__15);
 				}
 				break;
 			case T__0:
@@ -294,11 +294,11 @@ public class CookingParser extends Parser {
 			{
 			setState(44);
 			_la = _input.LA(1);
-			if ( !(_la==T__15 || _la==T__7) ) {
+			if ( !(_la==T__16 || _la==T__8) ) {
 			_errHandler.recoverInline(this);
 			}
 			consume();
-			setState(45); match(T__10);
+			setState(45); match(T__11);
 			}
 		}
 		catch (RecognitionException re) {
@@ -337,7 +337,7 @@ public class CookingParser extends Parser {
 			setState(47); match(T__21);
 			setState(48);
 			_la = _input.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__17) | (1L << T__13) | (1L << T__5))) != 0)) ) {
+			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__18) | (1L << T__14) | (1L << T__6))) != 0)) ) {
 			_errHandler.recoverInline(this);
 			}
 			consume();
@@ -376,7 +376,7 @@ public class CookingParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(50); match(T__0);
-			setState(51); match(T__6);
+			setState(51); match(T__7);
 			}
 		}
 		catch (RecognitionException re) {
@@ -390,31 +390,31 @@ public class CookingParser extends Parser {
 		return _localctx;
 	}
 
-	public static class Fisherman_dockContext extends ParserRuleContext {
+	public static class Fishermans_dockContext extends ParserRuleContext {
 		public Fd_foodContext fd_food() {
 			return getRuleContext(Fd_foodContext.class,0);
 		}
-		public Fisherman_dockContext(ParserRuleContext parent, int invokingState) {
+		public Fishermans_dockContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
-		@Override public int getRuleIndex() { return RULE_fisherman_dock; }
+		@Override public int getRuleIndex() { return RULE_fishermans_dock; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CookingListener ) ((CookingListener)listener).enterFisherman_dock(this);
+			if ( listener instanceof CookingListener ) ((CookingListener)listener).enterFishermans_dock(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CookingListener ) ((CookingListener)listener).exitFisherman_dock(this);
+			if ( listener instanceof CookingListener ) ((CookingListener)listener).exitFishermans_dock(this);
 		}
 	}
 
-	public final Fisherman_dockContext fisherman_dock() throws RecognitionException {
-		Fisherman_dockContext _localctx = new Fisherman_dockContext(_ctx, getState());
-		enterRule(_localctx, 14, RULE_fisherman_dock);
+	public final Fishermans_dockContext fishermans_dock() throws RecognitionException {
+		Fishermans_dockContext _localctx = new Fishermans_dockContext(_ctx, getState());
+		enterRule(_localctx, 14, RULE_fishermans_dock);
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(53); match(T__19);
+			setState(53); match(T__3);
 			setState(54); fd_food();
 			}
 		}
@@ -453,7 +453,7 @@ public class CookingParser extends Parser {
 			{
 			setState(56);
 			_la = _input.LA(1);
-			if ( !(_la==T__22 || _la==T__4) ) {
+			if ( !(_la==T__22 || _la==T__5) ) {
 			_errHandler.recoverInline(this);
 			}
 			consume();
@@ -501,7 +501,7 @@ public class CookingParser extends Parser {
 			setState(61);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__24) | (1L << T__23) | (1L << T__20) | (1L << T__3))) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__24) | (1L << T__23) | (1L << T__20) | (1L << T__4))) != 0)) {
 				{
 				{
 				setState(58); step();
@@ -566,7 +566,7 @@ public class CookingParser extends Parser {
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(66); match(T__3);
+				setState(66); match(T__4);
 				}
 				break;
 			case 4:
@@ -619,7 +619,7 @@ public class CookingParser extends Parser {
 			setState(71); match(T__24);
 			setState(72);
 			_la = _input.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__16) | (1L << T__12) | (1L << T__8) | (1L << T__2))) != 0)) ) {
+			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__17) | (1L << T__13) | (1L << T__9) | (1L << T__2))) != 0)) ) {
 			_errHandler.recoverInline(this);
 			}
 			consume();
@@ -658,7 +658,7 @@ public class CookingParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(74); match(T__3);
+			setState(74); match(T__4);
 			setState(76);
 			_la = _input.LA(1);
 			if (_la==T__20) {
@@ -667,7 +667,7 @@ public class CookingParser extends Parser {
 				}
 			}
 
-			setState(78); match(T__18);
+			setState(78); match(T__19);
 			}
 		}
 		catch (RecognitionException re) {
@@ -688,21 +688,21 @@ public class CookingParser extends Parser {
 		"\3\5\3\5\3\5\3\5\3\5\5\5-\n\5\3\6\3\6\3\6\3\7\3\7\3\7\3\b\3\b\3\b\3\t"+
 		"\3\t\3\t\3\n\3\n\3\13\7\13>\n\13\f\13\16\13A\13\13\3\f\3\f\3\f\3\f\3\f"+
 		"\5\fH\n\f\3\r\3\r\3\r\3\16\3\16\5\16O\n\16\3\16\3\16\3\16\2\2\17\2\4\6"+
-		"\b\n\f\16\20\22\24\26\30\32\2\6\4\2\f\f\24\24\5\2\n\n\16\16\26\26\4\2"+
-		"\5\5\27\27\6\2\13\13\17\17\23\23\31\31P\2\34\3\2\2\2\4\"\3\2\2\2\6$\3"+
-		"\2\2\2\b,\3\2\2\2\n.\3\2\2\2\f\61\3\2\2\2\16\64\3\2\2\2\20\67\3\2\2\2"+
-		"\22:\3\2\2\2\24?\3\2\2\2\26G\3\2\2\2\30I\3\2\2\2\32L\3\2\2\2\34\35\5\4"+
-		"\3\2\35\36\5\24\13\2\36\37\7\32\2\2\37\3\3\2\2\2 #\5\6\4\2!#\5\20\t\2"+
-		"\" \3\2\2\2\"!\3\2\2\2#\5\3\2\2\2$%\7\20\2\2%&\5\b\5\2&\7\3\2\2\2\'-\5"+
-		"\n\6\2(-\7\22\2\2)-\5\f\7\2*-\7\r\2\2+-\5\16\b\2,\'\3\2\2\2,(\3\2\2\2"+
-		",)\3\2\2\2,*\3\2\2\2,+\3\2\2\2-\t\3\2\2\2./\t\2\2\2/\60\7\21\2\2\60\13"+
-		"\3\2\2\2\61\62\7\6\2\2\62\63\t\3\2\2\63\r\3\2\2\2\64\65\7\33\2\2\65\66"+
-		"\7\25\2\2\66\17\3\2\2\2\678\7\b\2\289\5\22\n\29\21\3\2\2\2:;\t\4\2\2;"+
-		"\23\3\2\2\2<>\5\26\f\2=<\3\2\2\2>A\3\2\2\2?=\3\2\2\2?@\3\2\2\2@\25\3\2"+
-		"\2\2A?\3\2\2\2BH\7\4\2\2CH\5\30\r\2DH\7\30\2\2EH\7\7\2\2FH\5\32\16\2G"+
-		"B\3\2\2\2GC\3\2\2\2GD\3\2\2\2GE\3\2\2\2GF\3\2\2\2H\27\3\2\2\2IJ\7\3\2"+
-		"\2JK\t\5\2\2K\31\3\2\2\2LN\7\30\2\2MO\7\7\2\2NM\3\2\2\2NO\3\2\2\2OP\3"+
-		"\2\2\2PQ\7\t\2\2Q\33\3\2\2\2\7\",?GN";
+		"\b\n\f\16\20\22\24\26\30\32\2\6\4\2\13\13\23\23\5\2\t\t\r\r\25\25\4\2"+
+		"\5\5\26\26\6\2\n\n\16\16\22\22\31\31P\2\34\3\2\2\2\4\"\3\2\2\2\6$\3\2"+
+		"\2\2\b,\3\2\2\2\n.\3\2\2\2\f\61\3\2\2\2\16\64\3\2\2\2\20\67\3\2\2\2\22"+
+		":\3\2\2\2\24?\3\2\2\2\26G\3\2\2\2\30I\3\2\2\2\32L\3\2\2\2\34\35\5\4\3"+
+		"\2\35\36\5\24\13\2\36\37\7\32\2\2\37\3\3\2\2\2 #\5\6\4\2!#\5\20\t\2\""+
+		" \3\2\2\2\"!\3\2\2\2#\5\3\2\2\2$%\7\17\2\2%&\5\b\5\2&\7\3\2\2\2\'-\5\n"+
+		"\6\2(-\7\21\2\2)-\5\f\7\2*-\7\f\2\2+-\5\16\b\2,\'\3\2\2\2,(\3\2\2\2,)"+
+		"\3\2\2\2,*\3\2\2\2,+\3\2\2\2-\t\3\2\2\2./\t\2\2\2/\60\7\20\2\2\60\13\3"+
+		"\2\2\2\61\62\7\6\2\2\62\63\t\3\2\2\63\r\3\2\2\2\64\65\7\33\2\2\65\66\7"+
+		"\24\2\2\66\17\3\2\2\2\678\7\30\2\289\5\22\n\29\21\3\2\2\2:;\t\4\2\2;\23"+
+		"\3\2\2\2<>\5\26\f\2=<\3\2\2\2>A\3\2\2\2?=\3\2\2\2?@\3\2\2\2@\25\3\2\2"+
+		"\2A?\3\2\2\2BH\7\4\2\2CH\5\30\r\2DH\7\27\2\2EH\7\7\2\2FH\5\32\16\2GB\3"+
+		"\2\2\2GC\3\2\2\2GD\3\2\2\2GE\3\2\2\2GF\3\2\2\2H\27\3\2\2\2IJ\7\3\2\2J"+
+		"K\t\5\2\2K\31\3\2\2\2LN\7\27\2\2MO\7\7\2\2NM\3\2\2\2NO\3\2\2\2OP\3\2\2"+
+		"\2PQ\7\b\2\2Q\33\3\2\2\2\7\",?GN";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {
