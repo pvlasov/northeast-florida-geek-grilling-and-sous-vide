@@ -124,18 +124,15 @@ as:
 
 This [simple program](https://github.com/pvlasov/northeast-florida-geek-grilling-and-sous-vide/blob/master/cooking-grammar/src/us/vlasov/cooking/Cooking.java) 
 computed 42 step sequences with 498 variations using the constraints listed above and 
-assuming 3 types of seasonings per each food. In this book we are going to cover the 
+assuming 3 types of seasonings per each food. In this book we are going to cover some 
 sequences which include seasoning, grilling, sous vide, and freezing:
 
-* sous_vide, freeze, grill, season
 * season, sous_vide, freeze, grill
-* grill, season, sous_vide, freeze
 * sous_vide, freeze, season, grill
-* grill, sous_vide, freeze, season
 * season, grill, sous_vide, freeze
    
 Which, taking variations of each step and assuming 3 variations for the seasoning step, 
-results in 144 different ways to cook.
+results in 36 different ways to cook.
 
 Each of the aforementioned sequences has its own characteristics which will be explained 
 in the following chapters.
