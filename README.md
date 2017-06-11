@@ -18,7 +18,7 @@ step sequences.
 The book focuses on two types of food cooking - grilling and sous vide and on a small 
 set of meats - beef, pork, lamb, chicken, salmon, corvina, and shrimp. 
 
-There is a short grammar at the end about side-dishes.  
+There is a short chapter at the end about side-dishes.  
 
 The book is specific to the Northeast Florida, Jacksonville and Saint Augustine area 
 in particular, because it mentions names and locations of the food stores and food items
