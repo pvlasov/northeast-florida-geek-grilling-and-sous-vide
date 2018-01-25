@@ -27,3 +27,10 @@ which you can be bought in these stores.
 The author in not affiliated with neither any of the food stores mentioned in the book 
 nor with any manufacturers and distributors of cooking utensils described in the book.  
    
+## UML diagramming test
+
+This is a diagram:
+ 
+{% plantuml %}
+Bob->Alice : hello
+{% endplantuml %}   
